@@ -129,23 +129,27 @@
 
 //Rest operator-->combine all the argument and transform them into array
 
-function addStudent (student,studentName)
-{
-student.push(studentName);
-for(let student of studentName);
-console.log(students);
-}
-const students = ["Rahul", "Riya", "Prem"];
-addStudent(students, "Abhishek");
-addStudent(students, "Pratik");
-addStudent(students, "Surabhi");
+// function addStudent (student,studentName)
+// {
+// student.push(studentName);
+// for(let student of studentName);
+// console.log(students);
+// }
+// const students = ["Rahul", "Riya", "Prem"];
+// addStudent(students, "Abhishek");
+// addStudent(students, "Pratik");
+// addStudent(students, "Surabhi");
 
-//destructuring
-const [hi, ...bye] = ["Hi", "Bye", "Byee", "Byee"];
-console.log({hi,bye});
+// //destructuring
+// const [hi, ...bye] = ["Hi", "Bye", "Byee", "Byee"];
+// console.log({hi,bye});
 
 
-//spread operator
-const arr1 = [1, 3, 5, 6];
-console.log({arr1});
-console.log("spreaded array: ", [0, ...arr1, 67, 678,68]);
+// //spread operator
+// const arr1 = [1, 3, 5, 6];
+// console.log({arr1});
+// console.log("spreaded array: ", [0, ...arr1, 67, 678,68]);
+
+
+
+// ///use spread operator with objects
