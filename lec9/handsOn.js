@@ -36,10 +36,10 @@
 
 // console.log({newObj});
 
-const newObj = new Object();
-newObj.a = "a";
-newObj.b = "b";
-newObj.c = "c";
-newObj.d = "d";
+// const newObj = new Object();
+// newObj.a = "a";
+// newObj.b = "b";
+// newObj.c = "c";
+// newObj.d = "d";
 
-console.log({newObj});
+// console.log({newObj});

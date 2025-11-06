@@ -316,7 +316,7 @@
 
 
 
-//hw
+//hw union
 // let arr4 = [1,2,4,5,6,3];
 // let arr5 = [2,5,6,3,1,3];
 
@@ -324,7 +324,7 @@
 // console.log("Union:", union);
 
 
-
+// HW intersection
 let arr4 = [1,2,4,5,6,3];
 let arr5 = [2,5,6,3,1,3];
 

@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Vishal Mega Mart Application Form</h1>
+        <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="enter your full name" required autocomplete="name"/>
+        </div>
+        <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="enter your email" required autocomplete="email"/>
+</div>
+    
+        <div>
+        <label for="birth">Date of Birth</label>
+        <input id="birth" name="birth" type="date" />
+
+</div>
+
+        <div>
+            <label for="location">Location</label>
+            <select name="location" id="location">
+                <option  value="">Select a Location</option>
+                <option>Baner</option>
+                <option>Balewadi</option>
+                <option>Hadapsar</option>
+                <option>Karve Nagar</option>
+                <option>Viman Nagar</option>
+            </select>
+        </div>
+
+        </div>
+        <div>
+        <label for="resume">Resume file Upload</label>
+        <input id="resume" type="file" />
+</div>
+    
+        <div>
+        <label for="salary">Expected Salary</label>
+        <input id="salary" type="number" placeholder="enter below tour expectation" required autocomplete="number"/>
+</div>
+        <div>
+            <label for="salary">Current CTC</label>
+        <input id="salary" type="number" placeholder="enter your current ctc" required autocomplete="number"/>
+        </div>
+
+
+        <div>
+        <br />
+
+        <label id="experience">Prev Experience</label><br />
+
+        <input type="checkbox" id="internship" name="experience" value="internship" />
+        <label for="internship">Internships</label>
+
+        <input type="checkbox" id="jobs" name="experience" value="jobs" />
+        <label for="jobs">Jobs</label>
+
+        <input type="checkbox" id="selfemployed" name="experience" value="selfemployed" />
+        <label for="selfemployed">Self Employed</label>
+
+    </div>
+
+        
+         <label for="experience">Prev Experience</label>
+            <select name="experience" id="experience" multiple size="">
+                <option  value="">Select a city</option>
+                <option>D mart</option>
+                <option>Freshers</option>
+                <option>Hotel</option>
+                <option>Mall</option>
+            </select>
+
+            <div>
+                <label id="working"> Work time Shift</label>
+                <input type="radio" id="shift" name="shift" value="morning">
+                <label for="morning">Morning</label>
+                 <input type="radio" id="shift" name="shift" value="night">
+                <label for="night">Night</label>
+            </div>
+
+            </div>
+        <div>
+        <label for="birth">Earliest date of joining</label>
+        <input id="birth" name="birth" type="date" />
+
+</div>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

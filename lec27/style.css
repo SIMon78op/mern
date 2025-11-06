@@ -1,0 +1,32 @@
+
+/* universal selector : change the properties for each element*/
+* {
+    /*color is applied using existing color name*/
+    color: green;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* syntax
+selector {
+property: value
+}
+/*
+
+/* element selector: tag name*/
+
+
+#p1 {
+    /* color is applied using rgba, a-> alpha, which helps setting the transparency also */
+    color: rgba;
+}
+
+h2 {
+    /* color is applied using hex code, which is #rrggbb */
+    color: red;
+}
+
+a{
+    /* text decoration: none is helping to remove the underline from anchor tag */
+    text-decoration: none;
+    text-transform: capitalize; /* capatalize, uppercase, lowercase */
+}
