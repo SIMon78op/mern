@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Focus Flow Study Sessions</h1>
+    	<form id="session-form">
+			<h1>Study Session Form</h1>
+			<div class="study-session-name">
+				<label for="study-session-name">Session Name</label>
+				<input type="text" placeholder="enter session name" id="study-session-name" />
+			</div>
+			<p id="study-session-name-error"></p>
+
+			<div class="study-duration">
+				<label for="study-duration">Study Duration</label>
+				<input type="number" placeholder="enter duration" id="study-duration" />
+			</div>
+			<p id="duration-error"></p>
+
+			<div class="break-duration">
+				<label for="breaks">Break duration</label>
+				<input type="number" placeholder="enter no of breaks" id="breaks-duration" />
+			</div>
+			<p id="break-duration-error"></p>
+
+			<div class="cycle">
+				<label for="cycle">No of Cycles</label>
+				<input type="number" placeholder="enter no of cycles" id="cycle" />
+			</div>
+			<p id="cycle-error"></p>
+
+			<button disabled>Start Session</button>
+		</form>
+		<script src="script.js"></script>
+</body>
+</html>

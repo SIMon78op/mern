@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh
+}
+
+#outer-box{
+    background-color:aqua;
+    width:400px;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid grey;
+}
+
+#timer{
+    text-align:end;
+    font-size:16px;
+}
+
+#q-box{
+    font-size:18px;
+    color:black
+}
+
+#next{
+    float:right
+}

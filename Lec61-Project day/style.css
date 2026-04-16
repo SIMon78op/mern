@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    gap: 40px;
+}
+
+form {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: bisque;
+    color: black;
+    height: 70%;
+    width: 30%;
+    border-radius: 20px;
+}
+
+form > p {
+    color: red;
+
+}   
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form div > input {
+    padding: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    height: 10px;
+}
+
+button {
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    background-color: azure;
+    color: rgb(121, 114, 114);
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .product {
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>title</h1>
+            <h3>brand</h3>
+            <img src="" alt="loading the image"></img>
+            <h3>description</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>price</p>
+        </div>
+    </div>
+    <script>
+        const cardEle = document.querySelector(".container")
+        function fetchProduct(productId) {
+            fetch(`https://dummyjson.com/products/${productId}`)
+            .then((Response) => {
+                return Response.json()
+            })
+            .then((response) => {
+                console.log( {response});
+
+            const card = document.createElement("div");
+            card.classList.add("card")
+            card.innerHTML = `<h1>${response.title}</h1>
+                               <h3>${response.brand}</h3>
+                                <img src=${response.images[0]} alt="loading the image"></img>
+                               <h3>${response.description}</h3>
+                               <p>${response.price}</p>`
+                               cardEle.appendChild(card);
+                   
+            })
+            .catch((error) => console.log(error));
+
+        }
+   fetchProduct(1);
+   fetchProduct(2);
+   fetchProduct(3);
+   fetchProduct(4);
+   fetchProduct(5);
+    </script>
+</body>
+</html>

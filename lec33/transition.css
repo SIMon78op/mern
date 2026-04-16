@@ -1,0 +1,60 @@
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 200px;
+}
+
+.container .box {
+    width: 50px;
+    height: 40px;
+    margin-bottom: 50px;
+    background-color: aquamarine;
+}
+
+body:hover .box {
+    width: 500px;
+    background-color: crimson;
+}
+
+.transition {
+    transition-property: width;
+    transition-duration: 10s;
+    transition-delay: 5s;
+    transition-timing-function: linear;
+    transition: width 2s 1s ease-in-out, background-color all;
+}
+
+.linear {
+    transition-timing-function: linear;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.step-end {
+    transition-timing-function: step-end;
+}
+
+.step-start {
+    transition-timing-function: step-start;
+}
+
+.steps {
+    transition-timing-function: steps(6);
+}

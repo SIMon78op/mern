@@ -1,0 +1,60 @@
+/* Center the container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Product section with some spacing */
+.product-section {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Grid container */
+.product-container {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* spacing between cards */
+}
+
+/* Individual card styling */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Colored div as image placeholder */
+.image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #4a90e2;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* Text styling */
+.title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.desc {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Responsive for screens under 600px */
+@media (max-width: 600px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+}
